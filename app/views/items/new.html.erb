@@ -1,0 +1,6 @@
+<%= form_with model: @item, local: true do |f| %>
+  <h1>ご購入品の商品</h1>
+  <p>商品名：<%= f.text_field :name %></p>
+  <p>値段：<%= f.text_field :price %></p>
+  <%= f.submit "送信" %>
+<% end %>
